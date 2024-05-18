@@ -12,15 +12,15 @@ and Create a folder in node_exporter in /etc
 
          $ sudo mkdir /etc/node_exporter
          
-then copy key anf=d certificed genereted under the /etc/node_exporter
+then copy key and certificed genereted under the /etc/node_exporter
 
         $ cp node_exporter.key node_exporter.crt /etc/node_exporter/
         
 then Create a config.ymlfile in the same directory
 
-   tls_server_config:
-     cert_file: node_exporter.crt
-     key_file: node_exporter.key
+      tls_server_config:
+        cert_file: node_exporter.crt
+        key_file: node_exporter.key
 
 Update the permission to the folder for the user node_exporter
 
